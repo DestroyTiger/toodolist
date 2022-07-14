@@ -363,6 +363,7 @@ option {
     border-radius: 50%;
     background-color: rgb(161, 161, 161);
     transition: background-color 150ms linear;
+    z-index: 100;
 }
 
 .clearall i:hover {
@@ -429,7 +430,7 @@ option {
         align-items: center;
     }
     .toodolist{
-        height: 30vh;
+        height: 20vh;
 
     }
     .toodolist input,select,textarea,.submit {
@@ -441,7 +442,8 @@ option {
 
     }
     .container{
-        margin-top: 30vh;
+        margin-top: 20vh;
+        margin-bottom: 50px;
     }
     :is( .toodolist input,textarea)::placeholder{
         font-size: .7rem;
