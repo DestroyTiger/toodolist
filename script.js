@@ -108,7 +108,7 @@ submitBtn.addEventListener("click", function () {
     toodolistDataLocal = JSON.parse(localStorage.getItem("items"));
     clock = `  ${data.getHours()}:${miniut}  `;
     if (workName.value.length > 0 & workDescription.value.length > 0 & workAother.value.length > 0) {
-        location.reload();
+//         location.reload();
 
         toodolistData[count] = [{
             workName: workName.value,
@@ -136,7 +136,7 @@ const deletebtn = document.querySelectorAll(".deletebtn");
 const mainitems = document.querySelectorAll(".main");
 deletebtn.forEach((iteams, index) => {
     iteams.addEventListener("click", () => {
-        location.reload();
+//         location.reload();
 
         // console.log(index + 1);
         const mainSelector = iteams.parentElement.parentElement;
@@ -159,7 +159,7 @@ mainitems.forEach((iteams, index) => {
     iteams.addEventListener("click", function (event) {
 
         if (event.target.className === "complatebtn") {
-            location.reload();
+//             location.reload();
 
             if (toodolistDataNew[index][0].complateStatus === "uncomplate" | toodolistDataNew[index][0].complateStatus === "unselect") {
                 // console.log(event.target.parentElement.parentElement);
@@ -171,7 +171,7 @@ mainitems.forEach((iteams, index) => {
 
             }
             else if (toodolistDataNew[index][0].complateStatus === "complate") {
-                location.reload();
+//                 location.reload();
 
                 // console.log(event.target.parentElement.parentElement);
                 event.target.parentElement.parentElement.classList.toggle("complated");
