@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fa" translate="no">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>تمرینات</title>
+
+</head>
+
+<body>
+
+    <div class="toodolist" dir="rtl">
+        <div>
+            <div>
+                <input type="text" name="work" id="workname" maxlength="31" placeholder="نام کار" autocomplete required>
+            </div>
+            <div>
+                <textarea name="work" id="workdescription" placeholder="توضیحات کار" required></textarea>
+            </div>
+            <div>
+                <input type="text" name="work" id="workaother" maxlength="11" placeholder="نویسنده" autocomplete
+                    required>
+            </div>
+            <div>
+                <select id="status" dir="ltr">
+                    <option selected disabled value="unselect">حساسیت کار</option>
+                    <option value="normal">عادی</option>
+                    <option value="important">مهم</option>
+                    <option value="warning">فوری</option>
+                </select>
+            </div>
+            <div>
+                <select id="complatestatus" dir="ltr">
+                    <option selected disabled value="unselect">وضعیت کار</option>
+                    <option value="complate">تکمیل شده</option>
+                    <option value="uncomplate">تکمیل نشده</option>
+                </select>
+            </div>
+            <div>
+                <button class="submit">ثبت کردن</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" dir="rtl">
+        <!-- <div class="main complated" >
+            <div class="items ">
+                <div class="titlebox">
+                    <h3 class="itemtitle">انجام امورات دانشگاه</h3>
+                    <i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 14h6v6M3 21l6.1-6.1M20 10h-6V4M21 3l-6.1 6.1" />
+                        </svg></i>
+                </div>
+                <p class="discreption">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+                    طراحان
+                    گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                    تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
+                <div class="infowork">
+                    <small class="aother"><span>نویسنده : </span> <span class="aothername">محمد ظهرابی</span></small>
+                    <small class="time"><span>زمان ثبت :</span> <span class="timenumber">12:30</span></small>
+                    <small class="status-warning"><span>وضعیت :</span> <span class="statusname">فوری</span></small>
+
+                </div>
+
+            </div>
+            <div class="toodostatus">
+                <button class="deletebtn">حذف کردن</button>
+                <button class="complatebtn">تکمیل شده</button>
+
+            </div>
+
+        </div>  -->
+
+
+
+    </div>
+    <div class="clearall">
+        <i title="Clear All"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="15" y1="9" x2="9" y2="15"></line>
+                <line x1="9" y1="9" x2="15" y2="15"></line>
+            </svg></i>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>

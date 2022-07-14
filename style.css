@@ -1,0 +1,447 @@
+@import url(WebFonts/css/fontiran.css);
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+
+    background-color: rgb(228, 228, 228);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+div.main {
+    background-color: #f2f2f2;
+    border-radius: 10px 10px 0 0;
+    box-shadow: -8px -10px 10px white, 5px 5px 10px rgba(108, 107, 107, 0.172);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 220px;
+    padding-top: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    flex-shrink: 1;
+    flex-grow: 1;
+    max-width: 450px;
+
+}
+
+#numberCommas {
+    outline: transparent;
+    border-color: transparent;
+    width: 90%;
+    border-radius: 20px;
+    height: 35px;
+    font-size: 20px;
+    box-shadow: 0 0 20px rgba(149, 149, 149, 0.436);
+    font-family: "IRANSans";
+    font-weight: bold;
+
+
+}
+
+#numberCommas1 {
+    outline: transparent;
+    border-color: transparent;
+    width: 90%;
+    border-radius: 20px;
+    height: 35px;
+    font-size: 12px;
+    box-shadow: 0 0 20px rgba(149, 149, 149, 0.436);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "IRANSans";
+    font-weight: bold;
+
+
+
+}
+
+#numberCommas:valid {
+    border-color: rgba(0, 0, 0, 0.375);
+}
+
+label {
+    user-select: none;
+    font-weight: bold;
+}
+
+
+/* ........................ */
+.toodolist {
+    height: 12vh;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    top: 0%;
+    z-index: 100;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.322);
+    background-color: rgb(228, 228, 228);
+
+}
+
+.toodolist>div {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10vh;
+    gap: 25px;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100vw;
+    height: 78vh;
+    border-top: 1px solid #b6b8b6;
+    padding-top: 30px;
+    box-sizing: border-box;
+    padding: 30px;
+
+}
+
+.titlebox {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 12fr 1fr;
+    justify-content: space-between;
+    position: relative;
+}
+
+.titlebox i {
+    background-color: rgba(214, 205, 205, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    padding: 3px;
+    transition: background 200ms linear;
+    cursor: pointer;
+    position: absolute;
+    top: 4px;
+    left: 10px;
+}
+
+.titlebox i:hover {
+    background-color: rgba(214, 205, 205, 0.8);
+
+}
+
+.itemtitle {
+    width: 80%;
+    display: -webkit-box;
+    line-clamp: 1;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.items {
+
+    padding: 5px 10px;
+    font-family: IRANSans;
+    user-select: none;
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.discreption {
+    text-align: justify;
+    height: 120px;
+    line-height: 20px;
+    font-size: 14px;
+    display: -webkit-box;
+    line-clamp: 6;
+    -webkit-line-clamp: 6;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    max-height: 125px;
+}
+
+.infowork {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    width: 98%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 7px;
+    margin-bottom: 40px;
+}
+
+span {
+    font-size: 10px;
+}
+
+small {
+    padding: 3px 4px;
+    border-radius: 20px;
+    color: rgb(255, 254, 251);
+    opacity: .8;
+    transition: opacity 200ms linear;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    height: 22px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+
+
+small:hover {
+    opacity: 1;
+}
+
+.time {
+    background-color: #3f9274;
+
+}
+
+.aother {
+    background-color: #008B9E;
+    display: inline-flex;
+
+
+}
+
+.aothername {
+    display: -webkit-inline-box;
+    line-clamp: 1;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-align: center;
+    vertical-align: middle;
+
+}
+
+.status {
+    background-color: #002d47;
+    flex-shrink: 2;
+}
+
+.status-warning {
+    background: #d40a0a;
+}
+
+.status-important {
+    background-color: #c27107;
+}
+
+.toodostatus {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+}
+
+.deletebtn {
+    width: 50%;
+    border: 0;
+    background: #d40a0a;
+    height: 30px;
+    color: #fff;
+    font-family: IRANSans;
+    opacity: .8;
+    transition: opacity 200ms linear;
+}
+
+.complatebtn {
+    width: 50%;
+    border: 0;
+    background: #058f65;
+    height: 30px;
+    color: #fff;
+    font-family: IRANSans;
+    opacity: .8;
+    transition: opacity 200ms linear;
+}
+
+button:hover {
+    opacity: 1;
+    cursor: pointer;
+    user-select: none;
+}
+
+.toodolist {
+    display: flex;
+    align-items: center;
+    font-family: IRANSans;
+    justify-content: end;
+    gap: 10px;
+}
+
+.toodolist div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+textarea {
+    height: 40px;
+    width: 200px;
+    font-family: IRANSans;
+    resize: none;
+    text-align: justify;
+
+}
+
+textarea::placeholder {
+    padding-top: 10px;
+    padding-right: 3px;
+
+}
+
+.toodolist input {
+    height: 40px;
+    width: 200px;
+    font-family: IRANSans;
+
+}
+
+.toodolist input::placeholder {
+    font-family: IRANSans;
+    padding-right: 3px;
+
+}
+
+select {
+    height: 45px;
+    width: 200px;
+    font-family: IRANSans;
+}
+
+option {
+    direction: rtl;
+}
+
+.submit {
+    height: 45px;
+    width: 200px;
+    border: 0;
+    border-radius: 3px;
+    background: #058f65;
+    color: #fff;
+    font-family: IRANSans;
+    font-size: 1rem;
+    opacity: .8;
+    transition: opacity 200ms linear;
+}
+
+.clearall i {
+    position: fixed;
+    bottom: 3%;
+    left: 2%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgb(161, 161, 161);
+    transition: background-color 150ms linear;
+}
+
+.clearall i:hover {
+
+    background-color: #d40a0a;
+    cursor: pointer;
+
+}
+
+.complated {
+    position: absolute;
+
+}
+
+.complated::before {
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    transform: scale(3);
+    opacity: 0;
+    background: url(toppng.com-completed-stamp-1024x788.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    animation: complatefade 300ms linear alternate forwards;
+}
+
+@keyframes complatefade {
+    from {
+        transform: scale(3);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+}
+
+@media(max-width:1280px) {
+
+    .toodolist input,select,textarea,.submit {
+        height: 40px;
+        width: 100px;
+        font-family: IRANSans;
+        box-sizing: border-box;
+
+
+    }
+
+}
+@media(max-width:660px) {
+    .toodolist>div{
+        display: grid;
+        grid-auto-flow: row;
+        grid-template-columns:repeat(3,1fr);
+        justify-content: center;
+        align-items: center;
+    }
+    .toodolist{
+        height: 30vh;
+
+    }
+    .toodolist input,select,textarea,.submit {
+        height: 40px;
+        width: 80px;
+        font-family: IRANSans;
+        box-sizing: border-box;
+
+
+    }
+    .container{
+        margin-top: 30vh;
+    }
+
+}
