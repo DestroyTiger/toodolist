@@ -163,7 +163,7 @@ mainitems.forEach((iteams, index) => {
 
             if (toodolistDataNew[index][0].complateStatus === "uncomplate" | toodolistDataNew[index][0].complateStatus === "unselect") {
                 // console.log(event.target.parentElement.parentElement);
-                event.target.parentElement.parentElement.classList.toggle("complated");
+//                 event.target.parentElement.parentElement.classList.toggle("complated");
                 toodolistDataNew[index][0].complateStatus = "complate";
                 toodolistDataNew = toodolistDataNew.filter(iteams => iteams !== null);
                 localStorage.setItem("items", JSON.stringify(toodolistDataNew));
@@ -174,7 +174,7 @@ mainitems.forEach((iteams, index) => {
                 location.reload();
 
                 // console.log(event.target.parentElement.parentElement);
-                event.target.parentElement.parentElement.classList.toggle("complated");
+//                 event.target.parentElement.parentElement.classList.toggle("complated");
                 toodolistDataNew[index][0].complateStatus = "uncomplate";
                 toodolistDataNew = toodolistDataNew.filter(iteams => iteams !== null);
                 localStorage.setItem("items", JSON.stringify(toodolistDataNew));
