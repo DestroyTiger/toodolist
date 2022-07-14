@@ -443,5 +443,13 @@ option {
     .container{
         margin-top: 30vh;
     }
-
+    :is( .toodolist input,textarea)::placeholder{
+        font-size: .7rem;
+    }
+    select{
+        font-size: .6rem;
+    }
+.submit{
+    font-size: .8rem;
+}
 }
