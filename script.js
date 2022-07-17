@@ -136,7 +136,6 @@ const deletebtn = document.querySelectorAll(".deletebtn");
 const mainitems = document.querySelectorAll(".main");
 deletebtn.forEach((iteams, index) => {
     iteams.addEventListener("click", () => {
-        location.reload();
 
         // console.log(index + 1);
         const mainSelector = iteams.parentElement.parentElement;
@@ -145,6 +144,7 @@ deletebtn.forEach((iteams, index) => {
         delete toodolistDataNew[index];
         toodolistDataNew = toodolistDataNew.filter(items => items !== null);
         localStorage.setItem("items", JSON.stringify(toodolistDataNew));
+        location.reload();
 
         container.innerHTML = "";
         toodolistShow();
